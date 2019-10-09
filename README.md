@@ -1,0 +1,5 @@
+# A-simple-classifier-to-classify-Cars-and-aeroplanes-with-CNN
+Training a CNN and inference
+Today we will build a simple supervised algorithm with keras to classify cars and aeroplanes.  We will implement a simple CNN(convolution Neural Network), which we will train with the dataset, after the model is generated we can easily classify the images. Here we are using only two classes, but you can classify as many classes as you want.
+I am using a small dataset. For training 200 images of cars and 200 images of planes. And for testing 50 images from each class. You can use your own dataset and different classes if you want. The dataset contains lot of information or features of the images we provide. The model learns the distinguishable features from the data-set in the training process. With that information we can classify the images.  So lets get started.
+We will divide this tutorial in two parts, in part1 we will learn how to train the data-set and generate the model file and in part2 we will use this model file to do inference and real classification.
