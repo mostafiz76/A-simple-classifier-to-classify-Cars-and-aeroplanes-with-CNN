@@ -37,26 +37,4 @@ def predict(file):
     #    print("Predicted: soccer_ball")
     
   #return answer
-
-#Walk the directory for every image
-for i, ret in enumerate(os.walk(test_path)):
-  for i, filename in enumerate(ret[2]):
-    if filename.startswith("."):
-      continue
-    
-    print(ret[0] + '/' + filename)
-    result = predict(ret[0] + '/' + filename)
-    print(" ")
-
-#Calculate execution time
-end = time.time()
-dur = end-start
-
-if dur<60:
-    print("Execution Time:",dur,"seconds")
-elif dur>60 and dur<3600:
-    dur=dur/60
-    print("Execution Time:",dur,"minutes")
-else:
-    dur=dur/(60*60)
-    print("Execution Time:",dur,"hours")
+ result = predict('./v_data/train/planes/1.jpg')
